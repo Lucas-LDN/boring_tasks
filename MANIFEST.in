@@ -1,0 +1,3 @@
+graft boring_tasks
+global-exclude *.py[cod] __pycache__ *.so *.ipynb
+recursive-exclude  boring_tasks/jupy *
