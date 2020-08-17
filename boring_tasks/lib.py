@@ -9,6 +9,9 @@ import datetime
 
 pd.set_option('display.width', 200)
 
+def try_me():
+    return "Hey, I'm Lucas."
+
 
 def clean_data(data):
     """ clean data

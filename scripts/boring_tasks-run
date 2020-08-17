@@ -8,20 +8,7 @@ import pandas as pd
 
 # Import from boring_tasks
 import boring_tasks
-from boring_tasks.lib import clean_data
+from boring_tasks.lib import try_me
 
 if __name__ == '__main__':
-    usage = '%(prog)s'
-    description = 'boring_tasks_description'
-    # https://docs.python.org/3/library/argparse.html
-    # https://docs.python.org/3/howto/argparse.html
-    parser = argparse.ArgumentParser(description=description, usage=usage)
-    args = parser.parse_args()
-    folder_source, _ = split(boring_tasks.__file__)
-    df = pd.read_csv('{}/data/data.csv.gz'.format(folder_source))
-    print('  boring_tasks/data/data.csv.gz Loaded')
-
-    res = clean_data(df)
-    res.to_csv('out.csv', index=False)
-    print('==> out.csv MADE ')
-    print('    shape is {}'.format(res.shape))
+  print(try_me())
